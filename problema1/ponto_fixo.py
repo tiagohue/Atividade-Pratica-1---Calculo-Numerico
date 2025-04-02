@@ -25,7 +25,7 @@ def ponto_fixo(a, b, tolerancia = 1e-4, maximo_iteracoes = 25):
 
         #Atualiza para a próxima aproximação
         x = y
-
+        
 #Intervalo [a, b]
 a = 2 
 b = 3  
