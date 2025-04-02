@@ -3,7 +3,7 @@ def phi(x):
     return (4 * x + 9) ** (1/3)
  
 #Função do ponto fixo
-def ponto_fixo(a, b, tolerancia = 1e-6, maximo_iteracoes = 25):
+def ponto_fixo(a, b, tolerancia = 1e-4, maximo_iteracoes = 25):
     #Calcula a metade do intervalo
     x0 = (a + b) / 2
     x = x0 
@@ -25,10 +25,3 @@ def ponto_fixo(a, b, tolerancia = 1e-6, maximo_iteracoes = 25):
 
         #Atualiza para a próxima aproximação
         x = y
-
-#Intervalo [a, b]
-a = 2 
-b = 3  
-
-#Chama a função ponto_fixo
-raiz = ponto_fixo(a, b)

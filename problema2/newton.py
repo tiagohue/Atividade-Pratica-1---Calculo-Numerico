@@ -23,11 +23,3 @@ def metodo_newton(f, df, x, tol1=1e-4, tol2=1e-4, max_iter=25): # método de New
         x = x1
         k += 1
 
-a, b = 0, 1  # Intervalo dado no problema
-x = (a + b) / 2  # Ponto inicial (metade do intervalo)
-
-raiz, iteracoes, diferenca_final, valor_funcao = metodo_newton(f, df, x) # Chamada do método
-print(f"Raiz aproximada: {raiz:.8f}")
-print(f"Número de iterações: {iteracoes}")
-print(f"Diferença final: {diferenca_final:.2e}")
-print(f"Valor da função na raiz: {valor_funcao:.2e}")

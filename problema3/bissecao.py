@@ -1,7 +1,7 @@
 import math
 
 #definicao do metodo de bissecao
-def bissecao (f, a, b, epson, maxIter):
+def bissecao (f, a, b, epsilon, maxIter):
     fa = f(a)
     fb = f(b)
     
@@ -18,7 +18,7 @@ def bissecao (f, a, b, epson, maxIter):
         print(f"k = {k}, a = {k}, fa = {fa}, fb = {fb}, x = {x}, fx = {fx},  intervX = {intervX}")
         
         #caso de parada
-        if intervX <= epson or k >= maxIter:
+        if intervX <= epsilon or k >= maxIter:
             break
         
         #descobre se a raiz está em [a, x] ou [x, b]
@@ -38,8 +38,5 @@ def bissecao (f, a, b, epson, maxIter):
 
 #definicao de f(x)
 #f(x) = ln(x) + x^2 - 3
-def f(x):
+def f_problema3(x):
     return math.log(x) + x**2 - 3
-
-#chamada do método
-bissecao(f, 1, 2, 10**-4, 25)
