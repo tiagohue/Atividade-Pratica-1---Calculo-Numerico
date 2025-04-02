@@ -7,7 +7,7 @@ def ponto_fixo(a, b, tolerancia = 1e-6, maximo_iteracoes = 25):
     #Calcula a metade do intervalo
     x0 = (a + b) / 2
     x = x0 
-    iteracoes = 0  #Contador de iterações
+    iteracoes = 0 #Contador de iterações
 
     #Loop enquanto o número de iterações for menor que o número máximo de iterações
     while iteracoes < maximo_iteracoes:
