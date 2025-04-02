@@ -15,7 +15,7 @@ def bissecao (f, a, b, epsilon, maxIter):
         x = (a + b)/2
         fx = f(x)
         
-        print(f"k = {k}, a = {k}, fa = {fa}, fb = {fb}, x = {x}, fx = {fx},  intervX = {intervX}")
+        print(f"k = {k}, a = {a}, fa = {fa}, fb = {fb}, x = {x}, fx = {fx},  intervX = {intervX}")
         
         #caso de parada
         if intervX <= epsilon or k >= maxIter:
